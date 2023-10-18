@@ -1,0 +1,42 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  background: var(--background_first);
+  
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    
+    background: var(--background_second);
+    
+    max-width: 100vw;
+    padding: 20px 40px;
+    color: var(--text_color);
+    
+  }
+  
+  &_list {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+    
+  }
+  
+  &_action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    font-size: smaller;
+    
+    padding: 20px;
+  }
+  
+}
